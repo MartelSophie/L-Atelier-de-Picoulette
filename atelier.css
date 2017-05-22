@@ -1,0 +1,292 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-weight: normal;
+    background: #fff;
+    color: #333;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.site_logo_title {
+    padding: 30px;
+    text-align: center;
+}
+
+.logo {
+    width: 500px;
+    height: auto;
+}
+
+.site_logo_title p {
+    letter-spacing: 3px;
+    color: #bda08a;
+    font-family: 'Amatic SC', cursive;
+    padding-left: 27px;
+    font-size: 25px;
+}
+
+.site_block_navbar {
+    border-top: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+    padding: 13px 0;
+    padding-bottom: 45px;
+    z-index: 10000000;
+}
+
+.site_block_navbar li {
+    float: left;
+    list-style-type: none;
+    margin-right: 30px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+
+.site_block_navbar nav ul li a {
+    color: #333;
+    margin-right: 30px;
+}
+
+.nav_socials {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    margin-right: 30px;
+    float: right;
+}
+
+.fa-facebook:before {
+    color: #333;
+}
+
+.fa-instagram:before {
+    color: #333;
+}
+
+.global_dv {
+    padding-top: 30px;
+}
+
+.artcl_categories {
+    text-align: center;
+    border-bottom: solid 2px #b77b79;
+    width: 69px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+}
+
+.artcl_title {
+    text-align: center;
+    font-family: 'The Girl Next Door', cursive;
+    font-size: 25px;
+}
+
+.artcl_lnk_title {
+    color: #333;
+}
+
+.artcl_lnk_title:hover {
+    color: #333;
+}
+
+.block_date_comments {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+}
+
+.artcl_comments_nb {
+    color: #c79b9a;
+    font-family: 'Dosis', sans-serif;
+    margin-left: 10px;
+}
+
+.artcl_comments_nb:hover {
+    color: #ff918e;
+}
+
+.block_pic {
+    display: block;
+    margin: 0 auto;
+}
+
+.artcl_content p {
+    text-align: justify;
+    color: #333;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+}
+
+.artcl_content p:hover {
+    text-align: justify;
+    color: #333;
+}
+
+.artcl_socials li {
+    float: left;
+    position: relative;
+    background: #fff;
+    z-index: 4;
+    padding: 3px 3px 2px 0;
+    margin-top: 2px;
+    list-style: none;
+    margin-right: 13px;
+}
+
+.artcl_socials a:hover {
+    color: #333;
+}
+
+.read_more {
+    float: right;
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px 9px;
+    background-color: #bda08a;
+    color: #000000;
+    border: solid 1px #b77b79;
+    border-radius: 3em;
+    font-family: 'Dosis', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    z-index: 3;
+}
+
+#paging {
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    margin: 0 0 30px 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+#paging a {
+    color: #333;
+}
+
+#paging a:hover {
+    color: #b77b79;
+}
+
+.pages_numbers {
+    background-color: #b77b79;
+    border-right: solid 1px #ebebeb;
+    display: inline-block;
+    font-weight: bold;
+    padding: 14px 18px;
+    line-height: normal;
+    color: #333;
+    font-size: 18px;
+}
+
+.pages_nb {
+    border-right: solid 1px #ebebeb;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 18px;
+    line-height: normal;
+}
+
+.pages_numbers_dots {
+    border-right: solid 1px #ebebeb;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 18px;
+    line-height: normal;
+}
+
+.pages_nb_next {
+    border-right: solid 1px #ebebeb;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 18px;
+    line-height: normal;
+}
+
+#footer {
+    border-top: solid 1px #ffbcba;
+    padding: 0;
+    text-align: center;
+}
+
+.byebye {
+    float: left;
+    color: #333;
+}
+
+.byebye:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.ftr_socials {
+    float: right;
+    width: 15%;
+}
+
+h3 a {
+    color: #333;
+}
+
+h3 a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.site_bar_socials {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.site_bar_socials li {
+    float: left;
+}
+
+.site_bar_socials li a {
+    display: block;
+    font-size: 18px;
+    padding: 2px 5px;
+    margin-left: 15px;
+}
+
+.ftr_signature {
+    padding: 30px;
+    text-align: center;
+}
+
+.ftr_signature p {
+    letter-spacing: 3px;
+    font-family: 'The Girl Next Door', cursive;
+}
+
+.ftr_signature a {
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+@media (max-width: 575px) {}
