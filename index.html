@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="bootstrap.min.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/8689ffd873.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
@@ -56,7 +57,7 @@
     <header>
             <div class="col-xs-12">
                 <div id="navbar2"class=" col-xs-12 site_block_navbar main_navbar_scrolled ">
-                    <nav class="main_navbar">
+                    <nav class="main_navbar containernav">
                         <ul>
                             <li><a href="about_me.html">À PROPOS</a></li>
                             <li><a href="couture.html">COUTURE</a></li>
@@ -544,6 +545,8 @@
             </div>
         </div>
     </footer>
+    <a href="#" title="Haut de page" class="scrollup"><i class="fa fa-arrow-up this-fa"></i></a>
+
     <!--END FOOTER-->
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -558,10 +561,7 @@ $(function() {
 */
       $('#navbar').hide();
       $('#navbar2').show();
-
 $('#navbar2').addClass('fixednav');
-
-
     } else {
       $('#navbar2').removeClass('fixednav');
       $('#navbar').show();
@@ -570,11 +570,34 @@ $('#navbar2').addClass('fixednav');
   });
 });
 
+</script>
+<script>
+      //scrollTop
+      ScrollToTop = function() {
+          var s = $(window).scrollTop();
+          if (s > 20) {
+              $('.scrollup').fadeIn();
+          } else {
+              $('.scrollup').fadeOut();
+          }
+          $('.scrollup').click(function() {
+              $("html, body").animate({
+                  scrollTop: 0
+              }, 500);
+              return false;
+          });
+      }
+      StopAnimation = function() {
+          $("html, body").bind("scroll mousedown DOMMouseScroll mousewheel keyup", function() {
+              $('html, body').stop();
+          });
+      }
+      $(window).scroll(function() {
+          ScrollToTop();
+          StopAnimation();
+      });
+  </script>
 
-</script>
-<script type="text/javascript">
-  console.log('jquery chargé');
-</script>
 </body>
 
 </html>
