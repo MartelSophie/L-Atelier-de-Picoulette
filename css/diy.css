@@ -57,14 +57,14 @@ body {
 }
 
 .main_navbar_scrolled {
-  width: 100%;
-  top: 0;
+    width: 100%;
+    top: 0;
 }
 
-.fixednav{
-  position: fixed!important;
-  background: white;
-z-index: 10000;
+.fixednav {
+    position: fixed!important;
+    background: white;
+    z-index: 10000;
 }
 
 .nav_socials {
@@ -175,11 +175,11 @@ z-index: 10000;
     z-index: 3;
 }
 
-@media (min-width: 10px){
-.containernav {
-    width: 1170px;
-    margin: auto;
-}
+@media (min-width: 10px) {
+    .containernav {
+        width: 1170px;
+        margin: auto;
+    }
 }
 
 #paging {
@@ -310,26 +310,27 @@ h3 a:hover {
 @media (max-width: 575px) {}
 
   .scrollup {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    display: none;
-    background-color: #0f0f12;
-    font-size: 20px;
-    text-align: center;
-    line-height: 37px;
-    border-radius: 3px;
-    color: #fe5f00;
-}
+      width: 40px;
+      height: 40px;
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+      display: none;
+      background-color: #bda08a;
+      font-size: 20px;
+      text-align: center;
+      line-height: 37px;
+      border-radius: 3px;
+      color: ##f7e7e7;
+  }
 
 .scrollup:hover {
-    color: #fe5f00;
+    color: ##f7e7e7;
 }
-@media (min-width: 10px){
-.containernav {
-    width: 1170px;
-    margin: auto;
-}
+
+@media (min-width: 10px) {
+    .containernav {
+        width: 1170px;
+        margin: auto;
+    }
 }

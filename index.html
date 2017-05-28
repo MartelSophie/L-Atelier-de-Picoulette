@@ -26,7 +26,7 @@
                         </h1>
                     <p>Blog Couture, Lifestyle & DIY</p>
                 </div>
-                <div id="navbar"class=" col-xs-12 site_block_navbar main_navbar_scrolled ">
+                <div id="navbar" class=" col-xs-12 site_block_navbar main_navbar_scrolled ">
                     <nav class="main_navbar">
                         <ul>
                             <li><a href="about_me.html">À PROPOS</a></li>
@@ -53,39 +53,39 @@
     </header>
     <!--END HEADER-->
 
-<!-- DOUBLON NAVBAR-->
+    <!-- DOUBLON NAVBAR-->
     <header>
-            <div class="col-xs-12">
-                <div id="navbar2"class=" col-xs-12 site_block_navbar main_navbar_scrolled ">
-                    <nav class="main_navbar containernav">
-                        <ul>
-                            <li><a href="about_me.html">À PROPOS</a></li>
-                            <li><a href="couture.html">COUTURE</a></li>
-                            <li><a href="atelier.html">ATELIER</a></li>
-                            <li><a href="lifestyle.html">LIFESTYLE</a></li>
-                            <li><a href="diy.html">DIY</a></li>
-                            <li><a href="https://www.etsy.com/" target="_blank">E-SHOP</a></li>
-                            <div class="nav_socials">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/profile.php?id=100017397664165" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </ul>
-                    </nav>
-                </div>
+        <div class="col-xs-12">
+            <div id="navbar2" class=" col-xs-12 site_block_navbar main_navbar_scrolled ">
+                <nav class="main_navbar containernav">
+                    <ul>
+                        <li><a href="about_me.html">À PROPOS</a></li>
+                        <li><a href="couture.html">COUTURE</a></li>
+                        <li><a href="atelier.html">ATELIER</a></li>
+                        <li><a href="lifestyle.html">LIFESTYLE</a></li>
+                        <li><a href="diy.html">DIY</a></li>
+                        <li><a href="https://www.etsy.com/" target="_blank">E-SHOP</a></li>
+                        <div class="nav_socials">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=100017397664165" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </nav>
             </div>
+        </div>
     </header>
     <!--END DOUBLON NAVBAR-->
 
     <!--MAIN-->
     <main class="">
         <div class="container">
-            <div class="row" >
+            <div class="row">
                 <div class="col-xs-12 global_dv">
                     <!--ARTICLE I-->
                     <div class="col-sm-6">
@@ -546,60 +546,56 @@
     <!--END FOOTER-->
 
     <!--NAVBARS-->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
-<script type="text/javascript">
-$('#navbar2').hide();
-$(function() {
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 263) /* .header-top height */ {
-/*
-*/
-      $('#navbar').hide();
-      $('#navbar2').show();
-$('#navbar2').addClass('fixednav');
-    } else {
-      $('#navbar2').removeClass('fixednav');
-      $('#navbar').show();
-      $('#navbar2').hide();
-    }
-  });
-});
-
-</script>
-<!--END NAVBARS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $('#navbar2').hide();
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 263) /* .header-top height */ {
+                    /*
+                     */
+                    $('#navbar').hide();
+                    $('#navbar2').show();
+                    $('#navbar2').addClass('fixednav');
+                } else {
+                    $('#navbar2').removeClass('fixednav');
+                    $('#navbar').show();
+                    $('#navbar2').hide();
+                }
+            });
+        });
+    </script>
+    <!--END NAVBARS-->
 
 
-<!--FLECHE SCROLLTOP-->
-<script>
-      //scrollTop
-      ScrollToTop = function() {
-          var s = $(window).scrollTop();
-          if (s > 20) {
-              $('.scrollup').fadeIn();
-          } else {
-              $('.scrollup').fadeOut();
-          }
-          $('.scrollup').click(function() {
-              $("html, body").animate({
-                  scrollTop: 0
-              }, 500);
-              return false;
-          });
-      }
-      StopAnimation = function() {
-          $("html, body").bind("scroll mousedown DOMMouseScroll mousewheel keyup", function() {
-              $('html, body').stop();
-          });
-      }
-      $(window).scroll(function() {
-          ScrollToTop();
-          StopAnimation();
-      });
-  </script>
-  <!--END FLECHE SCROLLTOP-->
+    <!--FLECHE SCROLLTOP-->
+    <script>
+        //scrollTop
+        ScrollToTop = function() {
+            var s = $(window).scrollTop();
+            if (s > 20) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+            $('.scrollup').click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        }
+        StopAnimation = function() {
+            $("html, body").bind("scroll mousedown DOMMouseScroll mousewheel keyup", function() {
+                $('html, body').stop();
+            });
+        }
+        $(window).scroll(function() {
+            ScrollToTop();
+            StopAnimation();
+        });
+    </script>
+    <!--END FLECHE SCROLLTOP-->
 
 </body>
 
