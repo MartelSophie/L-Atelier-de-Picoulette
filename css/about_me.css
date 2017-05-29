@@ -329,3 +329,125 @@ h3 a:hover {
 .scrollup:hover {
     color: #f7e7e7;
 }
+
+.mobile {
+  display: none;
+  width: 100%;
+  top: 0
+}
+
+.card-block p {
+  color: #000!important
+}
+
+.link-a {
+  display: none;
+}
+
+
+@media screen and (min-width:20px) and (max-width:991px) {
+  .desk_nav2{
+    display: none
+  }
+  .desk_nav{
+    display: none
+  }
+}
+@media screen and (min-width:701px) and (max-width:991px) {
+  .mobile {
+    display: block;
+    height: 10vh;
+    z-index: 1
+  }
+  .desktop {
+    display: none!important
+  }
+  .mobile a, .mobile-link {
+    display: block
+  }
+  .mobile button {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    text-indent: 200%;
+    overflow: hidden;
+    background:url(../img/menu.png) center no-repeat #ffffff ;
+    border: 1px solid #120712 ;
+    border-radius: 3px;
+    background-size: 90%;
+    width: 71px;
+    height: 71px;
+    outline: 0;
+    transition: all .4s ease;
+    margin-right: 6vh;
+    cursor: pointer
+  }
+  .mobile-link {
+    background: rgba(0, 0, 0, .7);
+    z-index: 10000;
+    font-size: 100px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700
+  }
+  .expanded {
+    transform: rotate(90deg);
+    background-color: transparent;
+    border: 0
+  }
+  .no-marge-mobile {
+    padding-left: 0
+  }
+}
+
+@media screen and (min-width:200px) and (max-width:700px) {
+  .mobile {
+    display: block;
+    height: 10vh;
+    z-index: 1
+  }
+  .desktop {
+    display: none
+  }
+  .mobile a, .mobile-link {
+    display: block
+  }
+  .mobile button {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    text-indent: 200%;
+    overflow: hidden;
+    background:url(../img/menu.png) center no-repeat #ffffff ;
+    border: 1px solid #120712 ;
+    border-radius: 3px;
+    background-size: 90%;
+    width: 40px;
+    height: 40px;
+    outline: 0;
+    transition: all .4s ease;
+    margin-right: 6vh;
+    cursor: pointer
+  }
+  .mobile-link {
+    background: rgba(0, 0, 0, .7);
+    z-index: 10000;
+    font-size: 65px;
+    text-align: center;
+    color: #fff
+  }
+  .expanded {
+    transform: rotate(90deg);
+    background-color: transparent;
+    border: 0
+  }
+  .no-marge-mobile {
+    padding-left: 0
+  }
+}
+
+
+
+.col-sm-6{
+  z-index: -1
+}
