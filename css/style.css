@@ -186,6 +186,10 @@ body {
     }
 }
 
+.global_dv {
+  z-index: -1
+}
+
 #paging {
     font-family: 'Dosis', sans-serif;
     font-size: 18px;
@@ -407,13 +411,14 @@ h3 a:hover {
   .mobile {
     display: block;
     height: 10vh;
-    z-index: 1
+
   }
   .desktop {
     display: none
   }
   .mobile a, .mobile-link {
-    display: block
+    display: block;
+
   }
   .mobile button {
     position: absolute;
