@@ -131,6 +131,8 @@ body {
 .block_pic {
     display: block;
     margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
 }
 
 .artcl_content p {

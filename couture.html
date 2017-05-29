@@ -82,6 +82,20 @@
     </header>
     <!--END DOUBLON NAVBAR-->
 
+    <!--HAMBURGER MENU-->
+    <div class="mobile">
+                <button>Toggle</button>
+                <div class="link-a">
+                  <a class="mobile-link " href="about_me.html">À Propos</a>
+                  <a  class="mobile-link" href="couture.html">Couture</a>
+                  <a  class="mobile-link"  href="atelier.html">Atelier</a>
+                  <a  class="mobile-link"   href="lifestyle.html">LifeStyle</a>
+                  <a  class="mobile-link"   href="diy.html">DIY</a>
+                  <a  class="mobile-link"   href="https://www.etsy.com/">E-Shop</a>
+                </div>
+            </div>
+    <!--END HAMBURGER MENU-->
+
     <!--MAIN-->
     <main class="">
         <div class="container">
@@ -542,6 +556,7 @@
         </div>
     </footer>
     <!--END FOOTER-->
+    <a href="#" title="Haut de page" class="scrollup"><i class="fa fa-arrow-up this-fa"></i></a>
 
     <!--NAVBARS-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -594,6 +609,16 @@
         });
     </script>
     <!--END FLECHE SCROLLTOP-->
+
+    <!--HAMBURGER MENU-->
+    <script>
+                  jQuery(document).ready(function() {
+                      $('button').click(function() {
+                          $(this).toggleClass('expanded').siblings('div').slideToggle();
+                      });
+                  });
+              </script>
+    <!--END HAMBURGER MENU-->
 </body>
 
 </html>

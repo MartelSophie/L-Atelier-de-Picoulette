@@ -81,6 +81,20 @@
     </header>
     <!--END DOUBLON NAVBAR-->
 
+    <!--HAMBURGER MENU-->
+    <div class="mobile">
+                <button>Toggle</button>
+                <div class="link-a">
+                  <a class="mobile-link " href="about_me.html">À Propos</a>
+                  <a  class="mobile-link" href="couture.html">Couture</a>
+                  <a  class="mobile-link"  href="atelier.html">Atelier</a>
+                  <a  class="mobile-link"   href="lifestyle.html">LifeStyle</a>
+                  <a  class="mobile-link"   href="diy.html">DIY</a>
+                  <a  class="mobile-link"   href="https://www.etsy.com/">E-Shop</a>
+                </div>
+            </div>
+    <!--END HAMBURGER MENU-->
+
 
     <!--PAGING-->
     <div id="paging">
@@ -164,6 +178,16 @@
         });
     </script>
     <!--END FLECHE SCROLLTOP-->
+
+    <!--HAMBURGER MENU-->
+    <script>
+                  jQuery(document).ready(function() {
+                      $('button').click(function() {
+                          $(this).toggleClass('expanded').siblings('div').slideToggle();
+                      });
+                  });
+              </script>
+    <!--END HAMBURGER MENU-->
 </body>
 
 </html>

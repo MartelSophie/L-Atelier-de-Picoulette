@@ -82,6 +82,20 @@
     </header>
     <!--END DOUBLON NAVBAR-->
 
+    <!--HAMBURGER MENU-->
+    <div class="mobile">
+                <button>Toggle</button>
+                <div class="link-a">
+                  <a class="mobile-link " href="about_me.html">À Propos</a>
+                  <a  class="mobile-link" href="couture.html">Couture</a>
+                  <a  class="mobile-link"  href="atelier.html">Atelier</a>
+                  <a  class="mobile-link"   href="lifestyle.html">LifeStyle</a>
+                  <a  class="mobile-link"   href="diy.html">DIY</a>
+                  <a  class="mobile-link"   href="https://www.etsy.com/">E-Shop</a>
+                </div>
+            </div>
+    <!--END HAMBURGER MENU-->
+
     <!--MAIN-->
     <main class="">
         <div class="container">
@@ -93,7 +107,7 @@
                             <div class="artcl_categories">
                                 <p>LIFESTYLE</p>
                             </div>
-                            <h2 class="artcl_title"><a class="artcl_lnk_title" href="#">Tendance aux ongles arrondis</a></h2>
+                            <h2 class="artcl_title"><a class="artcl_lnk_title" href="#">Tendance ongles arrondis</a></h2>
                             <div class="block_date_comments">
                                 <time class="artcl_date">13 Mai 2017</time>
                                 <a class="artcl_comments_nb" href="#">COMMENTAIRES</a>
@@ -542,6 +556,7 @@
         </div>
     </footer>
     <!--END FOOTER-->
+    <a href="#" title="Haut de page" class="scrollup"><i class="fa fa-arrow-up this-fa"></i></a>
 
     <!--NAVBARS-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -594,6 +609,16 @@
         });
     </script>
     <!--END FLECHE SCROLLTOP-->
+
+    <!--HAMBURGER MENU-->
+    <script>
+                  jQuery(document).ready(function() {
+                      $('button').click(function() {
+                          $(this).toggleClass('expanded').siblings('div').slideToggle();
+                      });
+                  });
+              </script>
+    <!--END HAMBURGER MENU-->
 </body>
 
 </html>

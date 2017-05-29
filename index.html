@@ -17,7 +17,7 @@
 
 <body>
     <!--HEADER-->
-    <header>
+    <header class="desk_nav">
         <div class="container">
             <div class="col-xs-12">
                 <div class=" col-xs-12 site_logo_title">
@@ -54,7 +54,7 @@
     <!--END HEADER-->
 
     <!-- DOUBLON NAVBAR-->
-    <header>
+    <header class="desk_nav2">
         <div class="col-xs-12">
             <div id="navbar2" class=" col-xs-12 site_block_navbar main_navbar_scrolled ">
                 <nav class="main_navbar containernav">
@@ -81,6 +81,20 @@
         </div>
     </header>
     <!--END DOUBLON NAVBAR-->
+
+    <!--HAMBURGER MENU-->
+    <div class="mobile">
+                <button>Toggle</button>
+                <div class="link-a">
+                  <a class="mobile-link " href="about_me.html">À Propos</a>
+                  <a  class="mobile-link" href="couture.html">Couture</a>
+                  <a  class="mobile-link"  href="atelier.html">Atelier</a>
+                  <a  class="mobile-link"   href="lifestyle.html">LifeStyle</a>
+                  <a  class="mobile-link"   href="diy.html">DIY</a>
+                  <a  class="mobile-link"   href="https://www.etsy.com/">E-Shop</a>
+                </div>
+            </div>
+    <!--END HAMBURGER MENU-->
 
     <!--MAIN-->
     <main class="">
@@ -127,7 +141,7 @@
                             <div class="artcl_categories">
                                 <p>DIY</p>
                             </div>
-                            <h2 class="artcl_title"><a class="artcl_lnk_title" href="#">Eau de rose de Damas de la Vallée M'Gouna</a></h2>
+                            <h2 class="artcl_title"><a class="artcl_lnk_title" href="#">Eau de rose de Damas</a></h2>
                             <div class="block_date_comments">
                                 <time class="artcl_date">09 Mai 2017</time>
                                 <a class="artcl_comments_nb" href="#">COMMENTAIRES</a>
@@ -597,6 +611,15 @@
     </script>
     <!--END FLECHE SCROLLTOP-->
 
+    <!--HAMBURGER MENU-->
+    <script>
+                  jQuery(document).ready(function() {
+                      $('button').click(function() {
+                          $(this).toggleClass('expanded').siblings('div').slideToggle();
+                      });
+                  });
+              </script>
+    <!--END HAMBURGER MENU-->
 </body>
 
 </html>
